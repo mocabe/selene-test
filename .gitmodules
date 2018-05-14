@@ -1,0 +1,3 @@
+[submodule "external/selene"]
+	path = external/selene
+	url = https://github.com/kmhofmann/selene.git
