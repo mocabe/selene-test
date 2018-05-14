@@ -1,0 +1,81 @@
+/c/git/selene-test · (master±)
+⟩ mkdir build
+
+/c/git/selene-test · (master±)
+⟩ cd build
+
+/c/git/selene-test/build · (master±)
+⟩ cmake ..
+-- Building for: Visual Studio 15 2017
+-- The C compiler identification is MSVC 19.14.26428.1
+-- The CXX compiler identification is MSVC 19.14.26428.1
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/Preview/Community/VC/Tools/MSVC/14.14.26428/bin/Hostx86/x86/cl.exe
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/Preview/Community/VC/Tools/MSVC/14.14.26428/bin/Hostx86/x86/cl.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/Preview/Community/VC/Tools/MSVC/14.14.26428/bin/Hostx86/x86/cl.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/Preview/Community/VC/Tools/MSVC/14.14.26428/bin/Hostx86/x86/cl.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- initializing selene
+-- Could NOT find JPEG (missing: JPEG_LIBRARY)
+CMake Warning at external/selene/cmake/find_dependencies.cmake:33 (message):
+  Building without libjpeg support.
+Call Stack (most recent call first):
+  external/selene/CMakeLists.txt:27 (include)
+
+
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY) (found version "1.2.11")
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR)
+CMake Warning at external/selene/cmake/find_dependencies.cmake:43 (message):
+  Building without libpng support.
+Call Stack (most recent call first):
+  external/selene/CMakeLists.txt:27 (include)
+
+
+CMake Warning at external/selene/cmake/find_dependencies.cmake:48 (find_package):
+  By not providing "FindOpenCV.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "OpenCV", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "OpenCV" with any
+  of the following names:
+
+    OpenCVConfig.cmake
+    opencv-config.cmake
+
+  Add the installation prefix of "OpenCV" to CMAKE_PREFIX_PATH or set
+  "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  external/selene/CMakeLists.txt:27 (include)
+
+
+CMake Warning at external/selene/cmake/find_dependencies.cmake:53 (message):
+  Building without OpenCV support.
+Call Stack (most recent call first):
+  external/selene/CMakeLists.txt:27 (include)
+
+
+CMake Error: File C:/git/selene-test/cmake/selene-config.cmake.in does not exist.
+CMake Error at C:/Program Files/CMake/share/cmake-3.10/Modules/CMakePackageConfigHelpers.cmake:312 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  external/selene/selene/CMakeLists.txt:176 (configure_package_config_file)
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.10)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+See also "C:/git/selene-test/build/CMakeFiles/CMakeOutput.log".
